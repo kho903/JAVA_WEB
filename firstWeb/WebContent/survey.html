@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>설문 조사</h1>
+	<p>아래 항목을 채워주세요</p>
+	<h2>신상 정보 :</h2>
+	<form action="survey_result.jsp" method="post">
+		<table>
+			이름	<input type="text" name="name"><br> 
+			전화번호 <input type="text" name="phoneNum"><br> 
+			이메일 주소<input type="text" name="email"><br> 
+		</table>
+	<h2>어떤 경로로 알게되었습니까?</h2>
+	<input type="radio" name="contactVia" value="기사">기사 
+	<input type="radio" name="contactVia" value="광고">광고
+	<input type="radio" name="contactVia" value="기타">기타
+	
+	<h2>좋아하는 스포츠는 무엇입니까?</h2>
+	<input type="checkbox" name="sports" value="테니스">테니스
+	<input type="checkbox" name="sports" value="골프">골프
+	<input type="checkbox" name="sports" value="농구">농구<br>
+	<input type="checkbox" name="sports" value="스쿼시">스쿼시
+	<input type="checkbox" name="sports" value="볼링">볼링
+	<input type="checkbox" name="sports" value="축구">축구<br>
+	연락방법
+	<select name="contact">
+		<option value="email">email
+		<option value="phone">phone
+		<option value="sms">sms
+	</select>
+	<br><br>
+	<input type="checkbox" name="info" checked>
+	개인정보 활용에 동의합니다. 
+	<br>
+	<input type="submit" value="Submit">
+	</form>
+		
+	
+	
+</body>
+</html>
