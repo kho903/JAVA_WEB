@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 버튼을 하나 만들고, 버튼을 클릭하면 구구단이 출력되도록 코드를 작성해 보세요. -->
+<button onclick="gugudan(this)">
+구구단
+</button>
+<script type="text/javascript">
+	function gugudan(button){
+		document.write("<pre>");
+
+		for(i=1; i<9;i++){
+			for(j=2;j<9;j++){
+				document.write(j + "*" + i + "=" + i * j + "\t")
+			}
+			document.write("<br>");
+		}
+		document.write("</pre>")
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	text-align: right;
+}
+</style>
+</head>
+
+<body>
+	<h1>연산 시스템</h1>
+	<h4>아래 항목을 채워 주세요.</h4>
+	<form name="myForm" method="post">
+		<table>
+			<tr>
+				<td>피연산자1</td>
+				<td><input type="text" name="element1" id="element1"></td>
+			</tr>
+			<tr>
+				<td>피연산자2</td>
+				<td><input type="text" name="element2" id="element2"></td>
+			</tr>
+			<tr>
+				<td>결과값</td>
+				<td><input type="text" name="element1" id="res"></td>
+			</tr>
+		</table>
+			<input type="button" value="+" onClick="plus()">
+			<input type="button" value="-" onClick="minus()">
+			<input type="button" value="*" onClick="multi()">
+			<input type="button" value="/" onClick="divide()">
+	</form>
+</body>
+
+<script type="text/javascript">
+
+	function plus() {
+		var element1 = Number(document.getElementById("element1").value);
+		var element2 = Number(document.getElementById("element2").value);
+		document.getElementById("res").value = element1 + element2;
+		return false;
+	}
+
+	function minus() {
+		var element1 = Number(document.getElementById("element1").value);
+		var element2 = Number(document.getElementById("element2").value);
+		document.getElementById("res").value = element1 - element2;
+		return false;
+	}
+	
+	function multi() {
+		var element1 = Number(document.getElementById("element1").value);
+		var element2 = Number(document.getElementById("element2").value);
+		document.getElementById("res").value = element1 * element2;
+		return false;
+	}
+	
+	
+	function divide() {
+		var element1 = Number(document.getElementById("element1").value);
+		var element2 = Number(document.getElementById("element2").value);
+		document.getElementById("res").value = element1 / element2;
+		return false;
+	}
+</script>
+</html>

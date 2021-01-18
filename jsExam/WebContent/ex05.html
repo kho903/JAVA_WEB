@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" onSubmit="checkName()">
+	<input type="text" name="name" id="name">
+	<input type="submit" value="전송">
+</form>
+
+<script type="text/javascript">
+	function checkName(){
+		var name = document.getElementById("name");
+		if(name.value=="")
+			alert("값을 입력해주세요");
+		else
+			alert(name.value);
+	}
+</script>
+</body>
+</html>
