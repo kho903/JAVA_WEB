@@ -1,5 +1,7 @@
 package exam.spring.board.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -24,7 +26,7 @@ public class MembersController {
 	}
 
 	@PostMapping("/join")
-	public String memberJoin(@ModelAttribute Member member) {
+	public String memberJoin(@ModelAttribute Member member, HttpServletRequest request) {
 		System.out.println(member);
 		memberService.memberJoin(member);
 		return "redirect:/hello";
