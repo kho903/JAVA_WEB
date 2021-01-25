@@ -22,7 +22,7 @@ public class MembersMapperTest {
 	
 	@Test
 	public void getUser() throws Exception{
-		Member member = membersMapper.getMember("kho903");
+		Member member = membersMapper.getMember("carami");
 		Assert.assertNotNull(member);
 		System.out.println(member);
 	}
@@ -43,6 +43,6 @@ public class MembersMapperTest {
 	@Test
 	public void getMembers() throws Exception{
 		List<Member> memberList = membersMapper.getMembers();
-		Assert.assertEquals(8, memberList.size());
+		Assert.assertEquals(9, memberList.size());
 	}
 }

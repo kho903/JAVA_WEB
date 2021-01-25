@@ -18,7 +18,7 @@ public class ApplicationConfig {
 		dataSource.setDriverClass(oracle.jdbc.driver.OracleDriver.class);
 		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
 		dataSource.setUsername("javauser");
-		dataSource.setPassword("java");
+		dataSource.setPassword("java");		
 		return dataSource;
 	}
 }

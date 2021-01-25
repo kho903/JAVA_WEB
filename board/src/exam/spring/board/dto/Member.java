@@ -1,11 +1,13 @@
 package exam.spring.board.dto;
 
+import java.util.Date;
+
 public class Member {
 	private String id;
 	private String name;
 	private String password;
 	private String email;
-	private String joinDate;
+	private Date joinDate;
 
 	public String getId() {
 		return id;
@@ -39,11 +41,11 @@ public class Member {
 		this.email = email;
 	}
 
-	public String getJoinDate() {
+	public Date getJoinDate() {
 		return joinDate;
 	}
 
-	public void setJoinDate(String joinDate) {
+	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
 
